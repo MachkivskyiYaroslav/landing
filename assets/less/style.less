@@ -1,0 +1,446 @@
+@maxWidth: 1170px;
+@import "http://webfonts.ru/import/robotocondensed.css";
+@import "http://webfonts.ru/import/oswald.css";
+@import "http://webfonts.ru/import/sourcesanspro.css";
+@import "http://webfonts.ru/import/robotocondensed.css";
+body {
+    width: 100%;
+    height: 100%;
+    line-height: 24px;
+    color: #6a6a6a;
+    font-size: 13px;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: normal;
+    letter-spacing: 1px;
+    // --- GENERAL STYLE ---------------------------------
+    .container {
+        //max-width: @maxWidth !important;
+    }
+    .dtable {
+        display: table;
+        width: 100%;
+        .dcell {
+            display: table-cell;
+            vertical-align: middle;
+        }
+    }
+    .italic {
+        font-style: italic;
+    }
+    .center {
+        text-align: center;
+    }
+    .round {
+        border-radius: 15px;
+    }
+    .circle {
+        border-radius: 50%;
+    }
+    a,
+    input,
+    button {
+        transition: all 0.2s ease-in-out;
+        &:active,
+        &:focus {
+            outline: none;
+        }
+    }
+    form {
+        .inputblock {
+            label {
+                &.error {
+                    display: none !important;
+                }
+            }
+            input {
+                &.error {
+                    border-color: #CC0000;
+                }
+            }
+        }
+        .controls {
+            text-align: center;
+            button {
+                //
+            }
+        }
+        // Server Answer
+        h3 {
+            //
+        }
+    }
+    // Counter style
+    .countdown-row {
+        text-align: center;
+        margin: 0 auto;
+        .countdown-section {
+            margin: 0 10px;
+            width: 66px;
+            display: inline-block;
+            .countdown-amount {
+                // minutes
+                color: #FFF;
+                display: block;
+                height: 63px;
+                background: url(../images/timer.png) no-repeat center center;
+                font-size: 50px;
+                font-weight: 500;
+                padding: 0;
+            }
+            &:last-child {
+                .countdown-amount {
+                    color: #00a0fe;
+                }
+            }
+            .countdown-period {
+                display: block;
+                color: black;
+                font-size: 16px;
+                margin: 10px 0 0;
+            }
+        }
+    }
+    // --- NAVIGATION STYLES ---------------------------------
+    .navigation {
+        .navbar-header {
+            margin-right: 0;
+            margin-left: 0;
+        }
+        .navbar-custom {
+            padding: 20px 0;
+            border-bottom: 0;
+            letter-spacing: 1px;
+            background: 0 0;
+            text-transform: uppercase;
+            font-family: "Roboto Condensed", sans-serif;
+        }
+        a {
+            color: #fff;
+            font-size: 13px;
+            letter-spacing: 3px;
+        }
+        .navbar-nav {
+            float: left;
+            margin: 0;
+        }
+        .navbar-toogle {
+            display: none;
+        }
+        a:hover {
+            outline: 0;
+            color: rgba(255, 255, 255, .8);
+            background-color: transparent;
+        }
+        a:focus {
+            outline: 0;
+            background-color: transparent;
+        }
+        a:active {
+            outline: 0;
+            background-color: transparent;
+        }
+        .top-nav-collapse {
+            background: #111 none repeat scroll 0 0;
+            box-shadow: -5px 10px 12px -10px rgba(201, 201, 201, 0.67);
+        }
+        .navbar-custom.top-nav-collapse .nav li a {
+            color: #777777;
+            font-weight: bold;
+        }
+        .navbar-custom.top-nav-collapse .nav li.active a {
+            background-color: transparent;
+            color: #cccccc!important;
+
+        }
+        .navbar-custom.top-nav-collapse .navbar-brand {
+            color: #d8baba;
+        }
+    }
+    #section-intro {
+        height: 100vh;
+        background: #222 url("../images/tboma.jpg") no-repeat fixed 100% 100% / cover;
+        padding: 0px;
+        position: relative;
+     overflow: hidden;
+        
+        
+        .grey {
+            background: rgba(0, 0, 0, 0.65);
+            position: absolute;
+        }
+        .parallx-overlay {
+            
+            content: "";
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+            height: 100%;
+        }
+        h1 {
+            font-size: 60px;
+            color: #fff;
+            line-height: 50px;
+            margin: 30px 0px;
+            text-transform: uppercase;
+        }
+        .intro-caption {
+            width: 100%;
+            text-align: center;
+            color: white;
+            padding-top: 250px;
+        }
+        .footer-social {
+            margin: 20px 0px 0px 0px;
+        }
+        .list-inline {
+            list-style: none;
+            padding-left: 0;
+            text-align: center;
+            
+        }
+        li {
+            display: inline-block;
+            padding-right: 5px;
+            padding-left: 5px;
+        }
+        a {
+            text-transform: uppercase;
+            color: #fff;
+            font-weight: 700;
+            margin: 0px 15px;
+            font-size: 15px;
+            text-decoration: none;
+            transition: all 0.3s ease 0s;
+        }
+        a:hover {
+            color: red;
+        }
+    }
+    #section-about {
+        
+        .bx1{
+           background: white;
+            padding-bottom: 70px;
+        }
+        .section-title{
+            margin-top: 35px;
+        }
+        .background{
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 0px auto;
+            background-color: #cccccc;
+            border-radius: 100%;
+            -webkit-border-radius: 100%;
+            text-align: center;
+        }
+        .title-icon{
+            color:white;
+            text-align: center;
+            padding-top: 20px;
+        }
+        h1{
+            font-size: 46px !important;
+            letter-spacing: 2px !important;
+            line-height: 1.6 !important;
+            margin: 20px auto 50px;
+            padding: 0 40px;
+            color: #121212;
+            font-family: Oswald !important;
+            text-align: center;
+            font-weight: 700;
+            
+            text-transform: uppercase;}
+        
+        
+        .ab{
+            font-family: Oswald !important;
+            background-color: rgba(59, 63, 80, 0.6);
+            border-radius: 6px;
+            -webkit-border-radius: 6px;
+            color: #fff;
+            padding: 0px 10px;
+        }
+        
+        h1::before, h1::after{
+            background: none repeat scroll 0 0 #666666;
+            content: "";
+            height: 2px;
+            width: 36px;
+            display: -webkit-inline-box;
+            margin-bottom: 15px;
+        }
+        container-padding{
+            padding-right: 15px;
+            padding-left: 15px;
+            width: 100%;        }
+        .start{
+            font-family: oswald !important;
+            font-size: 18px !important;
+            font-weight: normal !important;
+        
+        }
+        
+        .other{
+            font-family: Source Sans Pro !important;
+            color: #666666;
+            font-size: 14px;
+            margin-bottom: 1.6em;
+        }
+        .thre{
+            font-family: Source Sans Pro !important;
+        }
+        .fa-ul{
+            font-size: 14px;
+            line-height: 1.6;
+            color:black;
+        
+        }
+        strong{
+            color:black;
+        }
+        .icons-three{
+            top: 0.29999em;
+            color: black;
+        }
+        .counters-item{
+            border: 1px solid #999999;
+            width: 150px;
+            height: 130px;
+            margin: 0px 2px 2px 0px;
+            float: left;
+            text-align: center;
+        }
+        .counters-item strong{
+            display: block;
+            font-size: 40px;
+            color: #666666;
+            font-weight: 700;
+            line-height: 45px;
+            letter-spacing: -2px;
+            font-family: Oswald !important;
+        }
+        .counters-item i{
+            margin-top: 16px;
+        }
+        .counters-item p{
+            line-height: 1.6em;
+            margin-bottom: 1.6em;
+            font-weight: normal;
+        }
+        .borders{
+            margin-top: 60px;
+        }
+        .bx2{
+            font-family: 'Roboto Condensed';
+            letter-spacing: .0625em;
+            font-size:16px;
+        }
+        .slide2-title{
+            font-size: 5em;
+              
+            font-weight: 300;
+            text-align: center;
+            padding-top: 100px;
+            padding-bottom: 100px;
+            margin: 0;
+            font: italic bold 5em;
+        }
+        
+        .media-wrap{
+            margin-bottom: 25px;
+        }
+        .left{
+            padding-right: 10px;
+            display: table-cell;
+            color: #ff6348;
+            font-size: 2.1875em;
+            line-height: 1.75;    
+        }
+        .right{
+            
+            display: table-cell;
+            line-height: 1.75;    
+            
+        }
+        .slide2-text{
+            color: #444;
+            font-weight: 300;
+            font-size: 16px;
+            margin: 16px 0px;
+        }
+        h5{
+            
+            line-height: 1.375em;
+            margin: 0;
+            padding: 0;
+            font-size: 1.375em;
+            color:#333;
+        }
+        
+        
+    }
+}
+
+//## Define the breakpoints at which your layout will change, adapting to different screen sizes.
+// Extra small screen / phone
+//** Deprecated `@screen-xs` as of v3.0.1
+@screen-xs: 320px;
+//** Deprecated `@screen-xs-min` as of v3.2.0
+@screen-xs-min: @screen-xs;
+//** Deprecated `@screen-phone` as of v3.0.1
+@screen-phone: @screen-xs-min;
+// Small screen / tablet
+//** Deprecated `@screen-sm` as of v3.0.1
+@screen-sm: 768px;
+@screen-sm-min: @screen-sm;
+//** Deprecated `@screen-tablet` as of v3.0.1
+@screen-tablet: @screen-sm-min;
+// Medium screen / desktop
+//** Deprecated `@screen-md` as of v3.0.1
+@screen-md: 992px;
+@screen-md-min: @screen-md;
+//** Deprecated `@screen-desktop` as of v3.0.1
+@screen-desktop: @screen-md-min;
+// Large screen / wide desktop
+//** Deprecated `@screen-lg` as of v3.0.1
+@screen-lg: 1200px;
+@screen-lg-min: @screen-lg;
+//** Deprecated `@screen-lg-desktop` as of v3.0.1
+@screen-lg-desktop: @screen-lg-min;
+// So media queries don't overlap when required, provide a maximum
+@screen-xs-max: (@screen-sm-min - 1);
+@screen-sm-max: (@screen-md-min - 1);
+@screen-md-max: (@screen-lg-min - 1);
+// 1200px and above
+@media (min-width: @screen-lg-min) {}
+
+// 992px - 1199px
+@media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
+    body {}
+}
+
+// 768px - 991px
+@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+    body {}
+}
+
+// 0px - 767px
+@media (max-width: @screen-xs-max) {
+    body .header .t1 {
+        color: #2f2d2d;
+        font-size: 25px;
+    }
+    .container {
+        width: 320px !important;
+    }
+}
+
+@media (max-width: 320px) {
+    header,
+    section,
+    footer {
+        width: 320px !important;
+    }
+}

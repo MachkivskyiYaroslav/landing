@@ -1,0 +1,358 @@
+a:4:{s:4:"root";s:24:"./assets/less/style.less";s:8:"compiled";s:7296:"@import "http://webfonts.ru/import/robotocondensed.css";
+@import "http://webfonts.ru/import/oswald.css";
+@import "http://webfonts.ru/import/sourcesanspro.css";
+body {
+  width: 100%;
+  height: 100%;
+  line-height: 24px;
+  color: #6a6a6a;
+  font-size: 13px;
+  font-family: 'Oxygen', sans-serif;
+  font-weight: normal;
+  letter-spacing: 1px;
+}
+body .dtable {
+  display: table;
+  width: 100%;
+}
+body .dtable .dcell {
+  display: table-cell;
+  vertical-align: middle;
+}
+body .italic {
+  font-style: italic;
+}
+body .center {
+  text-align: center;
+}
+body .round {
+  border-radius: 15px;
+}
+body .circle {
+  border-radius: 50%;
+}
+body a,
+body input,
+body button {
+  transition: all 0.2s ease-in-out;
+}
+body a:active,
+body a:focus,
+body input:active,
+body input:focus,
+body button:active,
+body button:focus {
+  outline: none;
+}
+body form .inputblock label.error {
+  display: none !important;
+}
+body form .inputblock input.error {
+  border-color: #CC0000;
+}
+body form .controls {
+  text-align: center;
+}
+body .countdown-row {
+  text-align: center;
+  margin: 0 auto;
+}
+body .countdown-row .countdown-section {
+  margin: 0 10px;
+  width: 66px;
+  display: inline-block;
+}
+body .countdown-row .countdown-section .countdown-amount {
+  color: #FFF;
+  display: block;
+  height: 63px;
+  background: url(../images/timer.png) no-repeat center center;
+  font-size: 50px;
+  font-weight: 500;
+  padding: 0;
+}
+body .countdown-row .countdown-section:last-child .countdown-amount {
+  color: #00a0fe;
+}
+body .countdown-row .countdown-section .countdown-period {
+  display: block;
+  color: black;
+  font-size: 16px;
+  margin: 10px 0 0;
+}
+body .navigation .navbar-header {
+  margin-right: 0;
+  margin-left: 0;
+}
+body .navigation .navbar-custom {
+  padding: 20px 0;
+  border-bottom: 0;
+  letter-spacing: 1px;
+  background: 0 0;
+  text-transform: uppercase;
+  font-family: "Roboto Condensed", sans-serif;
+}
+body .navigation a {
+  color: #fff;
+  font-size: 13px;
+  letter-spacing: 3px;
+}
+body .navigation .navbar-nav {
+  float: left;
+  margin: 0;
+}
+body .navigation .navbar-toogle {
+  display: none;
+}
+body .navigation a:hover {
+  outline: 0;
+  color: rgba(255,255,255,0.8);
+  background-color: transparent;
+}
+body .navigation a:focus {
+  outline: 0;
+  background-color: transparent;
+}
+body .navigation a:active {
+  outline: 0;
+  background-color: transparent;
+}
+body .navigation .top-nav-collapse {
+  background: #111 none repeat scroll 0 0;
+  box-shadow: -5px 10px 12px -10px rgba(201,201,201,0.67);
+}
+body .navigation .navbar-custom.top-nav-collapse .nav li a {
+  color: #777777;
+  font-weight: bold;
+}
+body .navigation .navbar-custom.top-nav-collapse .nav li.active a {
+  background-color: transparent;
+  color: #cccccc !important;
+}
+body .navigation .navbar-custom.top-nav-collapse .navbar-brand {
+  color: #d8baba;
+}
+body #section-intro {
+  height: 100vh;
+  background: #222 url("../images/tboma.jpg") no-repeat fixed 100% 100% / cover;
+  padding: 0px;
+  position: relative;
+  overflow: hidden;
+}
+body #section-intro .grey {
+  background: rgba(0,0,0,0.65);
+  position: absolute;
+}
+body #section-intro .parallx-overlay {
+  content: "";
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  height: 100%;
+}
+body #section-intro h1 {
+  font-size: 60px;
+  color: #fff;
+  line-height: 50px;
+  margin: 30px 0px;
+  text-transform: uppercase;
+}
+body #section-intro .intro-caption {
+  width: 100%;
+  text-align: center;
+  color: white;
+  padding-top: 250px;
+}
+body #section-intro .footer-social {
+  margin: 20px 0px 0px 0px;
+}
+body #section-intro .list-inline {
+  list-style: none;
+  padding-left: 0;
+  text-align: center;
+}
+body #section-intro li {
+  display: inline-block;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+body #section-intro a {
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 700;
+  margin: 0px 15px;
+  font-size: 15px;
+  text-decoration: none;
+  transition: all 0.3s ease 0s;
+}
+body #section-intro a:hover {
+  color: red;
+}
+body #section-about .bx1 {
+  background: white;
+  padding-bottom: 70px;
+}
+body #section-about .section-title {
+  margin-top: 35px;
+}
+body #section-about .background {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 0px auto;
+  background-color: #cccccc;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  text-align: center;
+}
+body #section-about .title-icon {
+  color: white;
+  text-align: center;
+  padding-top: 20px;
+}
+body #section-about h1 {
+  font-size: 46px !important;
+  letter-spacing: 2px !important;
+  line-height: 1.6 !important;
+  margin: 20px auto 50px;
+  padding: 0 40px;
+  color: #121212;
+  font-family: Oswald !important;
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+body #section-about .ab {
+  font-family: Oswald !important;
+  background-color: rgba(59,63,80,0.6);
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  color: #fff;
+  padding: 0px 10px;
+}
+body #section-about h1::before,
+body #section-about h1::after {
+  background: none repeat scroll 0 0 #666666;
+  content: "";
+  height: 2px;
+  width: 36px;
+  display: -webkit-inline-box;
+  margin-bottom: 15px;
+}
+body #section-about container-padding {
+  padding-right: 15px;
+  padding-left: 15px;
+  width: 100%;
+}
+body #section-about .start {
+  font-family: oswald !important;
+  font-size: 18px !important;
+  font-weight: normal !important;
+}
+body #section-about .other {
+  font-family: Source Sans Pro !important;
+  color: #666666;
+  font-size: 14px;
+  margin-bottom: 1.6em;
+}
+body #section-about .thre {
+  font-family: Source Sans Pro !important;
+}
+body #section-about .fa-ul {
+  font-size: 14px;
+  line-height: 1.6;
+  color: black;
+}
+body #section-about strong {
+  color: black;
+}
+body #section-about .icons-three {
+  top: 0.29999em;
+  color: black;
+}
+body #section-about .counters-item {
+  border: 1px solid #999999;
+  width: 150px;
+  height: 130px;
+  margin: 0px 2px 2px 0px;
+  float: left;
+  text-align: center;
+}
+body #section-about .counters-item strong {
+  display: block;
+  font-size: 40px;
+  color: #666666;
+  font-weight: 700;
+  line-height: 45px;
+  letter-spacing: -2px;
+  font-family: Oswald !important;
+}
+body #section-about .counters-item i {
+  margin-top: 16px;
+}
+body #section-about .counters-item p {
+  line-height: 1.6em;
+  margin-bottom: 1.6em;
+  font-weight: normal;
+}
+body #section-about .borders {
+  margin-top: 60px;
+}
+body #section-about .bx2 {
+  font-family: 'Roboto Condensed';
+  letter-spacing: .0625em;
+  font-size: 16px;
+}
+body #section-about .slide2-title {
+  font-size: 5em;
+  font-weight: 300;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  margin: 0;
+  font: italic bold 5em;
+}
+body #section-about .media-wrap {
+  margin-bottom: 25px;
+}
+body #section-about .left {
+  padding-right: 10px;
+  display: table-cell;
+  color: #ff6348;
+  font-size: 2.1875em;
+  line-height: 1.75;
+}
+body #section-about .right {
+  display: table-cell;
+  line-height: 1.75;
+}
+body #section-about .slide2-text {
+  color: #444;
+  font-weight: 300;
+  font-size: 16px;
+  margin: 16px 0px;
+}
+body #section-about h5 {
+  line-height: 1.375em;
+  margin: 0;
+  padding: 0;
+  font-size: 1.375em;
+  color: #333;
+}
+@media (max-width: 767px) {
+  body .header .t1 {
+    color: #2f2d2d;
+    font-size: 25px;
+  }
+  .container {
+    width: 320px !important;
+  }
+}
+@media (max-width: 320px) {
+  header,
+  section,
+  footer {
+    width: 320px !important;
+  }
+}
+";s:5:"files";a:1:{s:50:"Z:\home\localhost\www\clear\assets\less\style.less";i:1505667530;}s:7:"updated";i:1518792979;}
